@@ -1,59 +1,59 @@
-# Instagram Downloader 🚀
+# Instagram Downloader
 
-Aplikasi Flutter untuk mengunduh konten Instagram (foto, video, reels, stories) dengan fitur deteksi link otomatis, preview media, dan manajemen galeri yang powerful.
+A Flutter application for downloading Instagram content (photos, videos, reels, stories) with automatic link detection, media preview, and comprehensive gallery management.
 
-## 📱 Fitur Utama
+## Features
 
-### 🔍 Deteksi Otomatis
-- **Auto Clipboard Detection**: Mendeteksi link Instagram secara otomatis saat aplikasi dibuka
-- **Validasi URL**: Memastikan link yang ditempel valid dan dapat diproses
+### Automatic Detection
+- **Auto Clipboard Detection**: Automatically detects Instagram links from clipboard when app opens
+- **URL Validation**: Ensures pasted links are valid and processable
 
-### 📸 Multi-Content Support
-- **Foto & Carousel**: Mengunduh single foto atau multiple foto dalam satu postingan
-- **Video & Reels**: Mengunduh video content dengan kualitas pilihan
-- **Stories**: Support untuk mengunduh Instagram Stories
-- **IGTV**: Support untuk konten IGTV
+### Multi-Content Support
+- **Photos & Carousels**: Download single photos or multiple photos in one post
+- **Videos & Reels**: Download video content with quality selection
+- **Stories**: Support for downloading Instagram Stories
+- **IGTV**: Support for IGTV content downloads
 
-### 👁️ Preview Media
-- **Thumbnail Preview**: Melihat thumbnail sebelum mengunduh
-- **Media Player**: Preview video dengan pemutar built-in
-- **Informasi Post**: Menampilkan detail postingan (likes, comments, deskripsi)
+### Media Preview
+- **Thumbnail Preview**: View thumbnails before downloading
+- **Media Player**: Video preview with built-in player
+- **Post Information**: Display post details (likes, comments, description)
 
-### 📁 Manajemen File
-- **Galeri In-App**: Folder khusus untuk melihat hasil unduhan
-- **Organisasi File**: File tersimpan dengan nama yang terstruktur
-- **Share & Delete**: Berbagi atau menghapus file langsung dari galeri
-- **File Info**: Informasi ukuran file dan tanggal unduhan
+### File Management
+- **In-App Gallery**: Dedicated folder for viewing downloaded content
+- **File Organization**: Files saved with structured naming
+- **Share & Delete**: Share or delete files directly from gallery
+- **File Information**: File size and download date information
 
-### 🎨 User Experience
-- **Dark Mode**: Support tema gelap dan terang
-- **Progress Indicators**: Progress bar yang jelas saat mengunduh
-- **Error Handling**: Pesan error yang informatif
-- **Responsive UI**: Tampilan yang adaptif untuk berbagai ukuran layar
+### User Experience
+- **Dark Mode**: Support for dark and light themes
+- **Progress Indicators**: Clear progress bars during download
+- **Error Handling**: Informative error messages
+- **Responsive UI**: Adaptive display for various screen sizes
 
-## 🛠️ Teknologi yang Digunakan
+## Technology Stack
 
 ### Core Dependencies
-- **Flutter**: Framework utama untuk mobile development
-- **Provider**: State management untuk aplikasi
-- **Dio**: HTTP client untuk API requests
-- **Path Provider**: Manajemen path file system
-- **Permission Handler**: Manajemen izin perangkat
+- **Flutter**: Main framework for mobile development
+- **Provider**: State management for the application
+- **Dio**: HTTP client for API requests
+- **Path Provider**: File system path management
+- **Permission Handler**: Device permission management
 - **Flutter Downloader**: Background download processing
 
 ### UI/UX Dependencies
-- **Cached Network Image**: Loading dan caching gambar
+- **Cached Network Image**: Image loading and caching
 - **Shimmer**: Loading skeleton effects
-- **Iconsax**: Icon pack yang modern
-- **Lottie**: Animations untuk loading states
+- **Iconsax**: Modern icon pack
+- **Lottie**: Loading state animations
 
 ### Utility Dependencies
 - **Get It**: Dependency injection
-- **Logger**: Logging system yang powerful
-- **Shared Preferences**: Local storage untuk settings
-- **URL Launcher**: Membuka link eksternal
+- **Logger**: Powerful logging system
+- **Shared Preferences**: Local storage for settings
+- **URL Launcher**: External link opening
 
-## 📁 Struktur Proyek
+## Project Structure
 
 ```
 instagram_downloader/
@@ -79,15 +79,15 @@ instagram_downloader/
 └── pubspec.yaml               # Dependencies configuration
 ```
 
-## 🚀 Instalasi & Setup
+## Installation & Setup
 
-### Prasyarat
-- Flutter SDK (versi 3.0 atau lebih baru)
-- Dart SDK (versi 2.17 atau lebih baru)
+### Prerequisites
+- Flutter SDK (version 3.0 or newer)
+- Dart SDK (version 2.17 or newer)
 - Android Studio / Xcode
 - Git
 
-### Langkah Instalasi
+### Installation Steps
 
 1. **Clone Repository**
 ```bash
@@ -100,51 +100,51 @@ cd instagram_downloader
 flutter pub get
 ```
 
-3. **Konfigurasi Platform**
+3. **Platform Configuration**
 ```bash
-# Untuk Android
+# For Android
 flutter config --android-studio-dir="/path/to/android/studio"
 
-# Untuk iOS (macOS only)
+# For iOS (macOS only)
 sudo gem install cocoapods
 cd ios && pod install && cd ..
 ```
 
-4. **Jalankan Aplikasi**
+4. **Run Application**
 ```bash
-# Mode debug
+# Debug mode
 flutter run
 
-# Mode release
+# Release mode
 flutter run --release
 ```
 
-## 📱 Cara Penggunaan
+## Usage Guide
 
-### 1. **Copy Link Instagram**
-- Buka Instagram dan copy link postingan yang ingin diunduh
-- Aplikasi akan otomatis mendeteksi link dari clipboard
+### 1. **Copy Instagram Link**
+- Open Instagram and copy the post link you want to download
+- The app will automatically detect the link from clipboard
 
-### 2. **Paste Manual**
-- Buka aplikasi Instagram Downloader
-- Paste link di kolom input yang tersedia
-- Klik tombol "Download"
+### 2. **Manual Paste**
+- Open Instagram Downloader app
+- Paste the link in the provided input field
+- Click the "Download" button
 
 ### 3. **Preview & Download**
-- Aplikasi akan menampilkan preview konten
-- Pilih kualitas media (jika tersedia)
-- Klik "Download" untuk memulai proses unduhan
+- The app will display content preview
+- Select media quality (if available)
+- Click "Download" to start the download process
 
-### 4. **Akses Galeri**
-- Klik ikon galeri di pojok kanan atas
-- Lihat semua file yang telah diunduh
-- Share atau delete file sesuai kebutuhan
+### 4. **Access Gallery**
+- Click the gallery icon in the top right corner
+- View all downloaded files
+- Share or delete files as needed
 
-## 🔧 Konfigurasi
+## Configuration
 
 ### Environment Variables
 ```dart
-// Di file .env atau config
+// In .env or config file
 const String API_BASE_URL = 'https://api.instagram-downloader.com';
 const String API_KEY = 'your-api-key-here';
 ```
@@ -165,7 +165,7 @@ const String API_KEY = 'your-api-key-here';
 <string>We need access to save downloaded photos</string>
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Unit Tests
 ```bash
@@ -182,39 +182,39 @@ flutter drive --target=test_driver/app.dart
 flutter test test/widget_test.dart
 ```
 
-## 📊 Performance
+## Performance
 
-### Optimasi yang Diterapkan
-- **Lazy Loading**: Gambar dimuat saat dibutuhkan
-- **Caching**: Hasil API dan gambar di-cache
-- **Background Processing**: Download berjalan di background
-- **Memory Management**: Proper disposal dan cleanup
+### Applied Optimizations
+- **Lazy Loading**: Images loaded when needed
+- **Caching**: API results and images cached
+- **Background Processing**: Downloads run in background
+- **Memory Management**: Proper disposal and cleanup
 
-### Benchmark
-- Startup Time: < 2 detik
-- Download Speed: Bergantung pada koneksi
-- Memory Usage: < 100MB untuk aplikasi idle
-- Battery Usage: Minimal dengan background processing
+### Benchmarks
+- Startup Time: < 2 seconds
+- Download Speed: Depends on connection
+- Memory Usage: < 100MB for idle app
+- Battery Usage: Minimal with background processing
 
-## 🔒 Security & Privacy
+## Security & Privacy
 
 ### Data Protection
-- Tidak menyimpan data pengguna secara online
-- Semua data disimpan lokal di perangkat
-- Tidak ada tracking atau analytics tanpa persetujuan
+- No user data stored online
+- All data stored locally on device
+- No tracking or analytics without consent
 
 ### Network Security
-- HTTPS untuk semua network requests
-- Input validation untuk mencegah injection
-- File validation sebelum menyimpan
+- HTTPS for all network requests
+- Input validation to prevent injection
+- File validation before saving
 
-## 📋 Roadmap
+## Roadmap
 
-### Fitur Mendatang
+### Upcoming Features
 - [ ] Batch download multiple posts
-- [ ] Download private content (dengan login)
-- [ ] Cloud backup untuk history download
-- [ ] Advanced search dalam galeri
+- [ ] Download private content (with login)
+- [ ] Cloud backup for download history
+- [ ] Advanced search within gallery
 - [ ] Video compression options
 - [ ] Instagram Stories download
 - [ ] IGTV download support
@@ -229,37 +229,37 @@ flutter test test/widget_test.dart
 - [ ] Accessibility improvements
 - [ ] Tablet optimization
 
-## 🤝 Contributing
+## Contributing
 
-Kami menyambut kontribusi dari komunitas! Silakan fork repository dan buat pull request.
+We welcome contributions from the community! Please fork the repository and create a pull request.
 
 ### Guidelines
-1. Fork repository
-2. Buat branch untuk fitur baru (`git checkout -b feature/amazing-feature`)
-3. Commit perubahan (`git commit -m 'Add amazing feature'`)
-4. Push ke branch (`git push origin feature/amazing-feature`)
-5. Buat Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Create Pull Request
 
 ### Code Style
-- Ikuti Flutter style guide
-- Gunakan dart format
-- Tambahkan komentar untuk kompleksitas
-- Update dokumentasi jika perlu
+- Follow Flutter style guide
+- Use dart format
+- Add comments for complexity
+- Update documentation if needed
 
-## 📄 License
+## License
 
-Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) untuk detail.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- Flutter team untuk framework yang luar biasa
-- Instagram untuk API dan dokumentasi
-- Komunitas open source untuk packages dan tools
-- Kontributor dan beta tester
+- Flutter team for the excellent framework
+- Instagram for API and documentation
+- Open source community for packages and tools
+- Contributors and beta testers
 
-## 📞 Support
+## Support
 
-Jika Anda menemui masalah atau memiliki pertanyaan:
+If you encounter issues or have questions:
 
 - 📧 Email: support@instagramdownloader.com
 - 🐛 Issues: [GitHub Issues](https://github.com/yourusername/instagram_downloader/issues)
@@ -267,6 +267,6 @@ Jika Anda menemui masalah atau memiliki pertanyaan:
 
 ---
 
-**⚠️ Disclaimer**: Aplikasi ini dibuat untuk keperluan pendidikan dan personal use. Harap gunakan dengan bijak dan hormati hak cipta konten Instagram. Kami tidak bertanggung jawab atas penyalahgunaan aplikasi ini.
+**Disclaimer**: This application is created for educational and personal use purposes. Please use responsibly and respect Instagram content copyrights. We are not responsible for misuse of this application.
 
-**Made with ❤️ by Instagram Downloader Team**
+**Made by Instagram Downloader Team**
