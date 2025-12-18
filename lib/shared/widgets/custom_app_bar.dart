@@ -10,18 +10,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double? elevation;
 
   const CustomAppBar({
-    Key? key,
+    super.key,
     required this.title,
     this.showBackButton = false,
     this.actions,
     this.backgroundColor,
     this.textColor,
     this.elevation,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     final bgColor = backgroundColor ?? AppColors.surface;
     final txtColor = textColor ?? AppColors.textPrimary;
 

@@ -19,22 +19,12 @@ class GalleryProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      // Initialize storage service if not already initialized
-      if (_storageService.appDocumentsDirectory == null) {
-        await _storageService.initialize();
-      }
-
       final downloadsDir = _storageService.appDownloadsDirectory;
       if (await downloadsDir.exists()) {
-        final files = downloadsDir
-            .listSync()
-            .where((entity) => entity is File)
-            .map((entity) => entity as File)
-            .where((file) {
-              final extension = file.path.toLowerCase().split('.').last;
-              return ['jpg', 'jpeg', 'png', 'mp4'].contains(extension);
-            })
-            .toList();
+        final files = downloadsDir.listSync().whereType<File>().where((file) {
+          final extension = file.path.toLowerCase().split('.').last;
+          return ['jpg', 'jpeg', 'png', 'mp4'].contains(extension);
+        }).toList();
 
         // Sort by modification date (newest first)
         files.sort(

@@ -4,10 +4,9 @@ import 'package:provider/provider.dart';
 import 'package:instagram_downloader/features/gallery/presentation/providers/gallery_provider.dart';
 import 'package:instagram_downloader/shared/widgets/custom_app_bar.dart';
 import 'package:instagram_downloader/core/constants/app_colors.dart';
-import 'package:instagram_downloader/core/constants/app_constants.dart';
 
 class GalleryScreen extends StatefulWidget {
-  const GalleryScreen({Key? key}) : super(key: key);
+  const GalleryScreen({super.key});
 
   @override
   State<GalleryScreen> createState() => _GalleryScreenState();
@@ -61,7 +60,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
           Icon(
             Icons.photo_library_outlined,
             size: 80,
-            color: AppColors.textSecondary.withOpacity(0.5),
+            color: AppColors.textSecondary.withValues(alpha: 0.5),
           ),
           const SizedBox(height: 16),
           Text(
@@ -77,7 +76,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
             'Unduh konten Instagram untuk melihatnya di sini',
             style: TextStyle(
               fontSize: 14,
-              color: AppColors.textSecondary.withOpacity(0.7),
+              color: AppColors.textSecondary.withValues(alpha: 0.7),
             ),
           ),
         ],
@@ -134,7 +133,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
                   child: Container(
                     padding: const EdgeInsets.all(6),
                     decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.7),
+                      color: Colors.black.withValues(alpha: 0.7),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Icon(
@@ -179,7 +178,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
                       Text(
                         _getFileSize(file),
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.8),
+                          color: Colors.white.withValues(alpha: 0.8),
                           fontSize: 10,
                         ),
                       ),
@@ -220,7 +219,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
         child: Icon(
           Icons.play_circle_outline,
           size: 60,
-          color: AppColors.primary.withOpacity(0.8),
+          color: AppColors.primary.withValues(alpha: 0.8),
         ),
       ),
     );

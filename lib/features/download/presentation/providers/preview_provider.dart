@@ -157,19 +157,6 @@ class PreviewProvider with ChangeNotifier {
         setDownloadProgress(i / 100);
       }
 
-      // Create download item
-      final downloadItem = DownloadItem(
-        id: 'download_${DateTime.now().millisecondsSinceEpoch}',
-        post: _currentPost!,
-        status: DownloadStatus.completed,
-        progress: 1.0,
-        createdAt: DateTime.now(),
-        completedAt: DateTime.now(),
-        type: _getDownloadType(),
-        fileName:
-            '${_currentPost!.id}_${_selectedQuality}_$_selectedMediaIndex',
-      );
-
       AppLogger.info('Download completed successfully');
 
       // TODO: Save to history and storage
