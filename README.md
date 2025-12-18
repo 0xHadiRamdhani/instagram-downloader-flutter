@@ -56,7 +56,7 @@ A Flutter application for downloading Instagram content (photos, videos, reels, 
 ## Project Structure
 
 ```
-instagram_downloader/
+instagram-downloader-flutter/
 ├── lib/
 │   ├── core/
 │   │   ├── constants/          # App constants & colors
@@ -91,8 +91,8 @@ instagram_downloader/
 
 1. **Clone Repository**
 ```bash
-git clone https://github.com/yourusername/instagram_downloader.git
-cd instagram_downloader
+git clone https://github.com/0xHadiRamdhani/instagram-downloader-flutter.git
+cd instagram-downloader-flutter
 ```
 
 2. **Install Dependencies**
@@ -262,8 +262,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you encounter issues or have questions:
 
 - 📧 Email: support@instagramdownloader.com
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/instagram_downloader/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/yourusername/instagram_downloader/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/0xHadiRamdhani/instagram-downloader-flutter/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/0xHadiRamdhani/instagram-downloader-flutter/discussions)
 
 ---
 
